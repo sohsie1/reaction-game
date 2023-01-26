@@ -1,0 +1,11 @@
+.container {
+    border: 5px dotted black;
+    text-align: center;
+}
+
+
+.images {
+   display: flex;
+   justify-content: space-between;
+   padding: 100px;
+}
