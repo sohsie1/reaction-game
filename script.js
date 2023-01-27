@@ -1,3 +1,3 @@
-function game() {
-
-}
+/* function game(user) {
+console.log(user);
+} */ 

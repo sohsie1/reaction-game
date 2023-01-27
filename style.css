@@ -7,5 +7,5 @@
 .images {
    display: flex;
    justify-content: space-between;
-   padding: 100px;
+   padding: 50px;
 }
