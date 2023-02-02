@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+
 </head>
 
 
@@ -18,30 +18,35 @@
     <h1> Rock, Paper, Scissors </h1>
 
     <div class="scoreboard">
-      <div id="user" class="title">User</div>
-      <span id="userScore">-- User score shown here --</span>
+      <div id="player" class="title">Player</div>
+      <span id="playerScore">0</span>
       <div id="comp" class="title">Computer</div>
-      <span id="compScore">-- Computer score shown here --</span>
+      <span id="compScore">0</span>
     </div>
 
     <br>
 
-    <div class="result" <p> This is where the result will go! </p>
+    <div class="finalResult" <p>☆☆☆ </p>
     </div>
 
 
     <div class="images">
-      <img id="r"
-        src="https://media0.giphy.com/media/RLJGAXwbL1oH0klfbr/giphy.gif?cid=6c09b9523dab35923a4eb7dd6ce42e5c11690e05e0828eba&rid=giphy.gif&ct=s"
-        onclick="game(this)">
-      <img id="p"
-        src="https://media4.giphy.com/media/LQneD1zXEV4LO4hZPD/giphy.gif?cid=6c09b952c7d4445ab425ab03c07a0dc6f8dd3b4f5356fff2&rid=giphy.gif&ct=s"
-        onclick="game(this)">
-      <img id="s" src="https://i.gifer.com/LeHs.gif" onclick="game(this)">
+      <div class="image" id="r">
+        <img src="https://media0.giphy.com/media/RLJGAXwbL1oH0klfbr/giphy.gif?cid=6c09b9523dab35923a4eb7dd6ce42e5c11690e05e0828eba&rid=giphy.gif&ct=s">
+      </div>
+      <div class="image" id="p">
+        <img src="https://media4.giphy.com/media/LQneD1zXEV4LO4hZPD/giphy.gif?cid=6c09b952c7d4445ab425ab03c07a0dc6f8dd3b4f5356fff2&rid=giphy.gif&ct=s">
+      </div>
+      <div class="image" id="s">
+        <img src="https://media4.giphy.com/media/98ZkINGNDjpbpkLzRx/giphy.gif">
+      </div>
     </div>
 
-    <p id="resetMessage">Let's go again!</p>
+    <p id="bottomMessage">Click any option to begin the game!</p>
   </div>
 </body>
+
+
+<script src="script.js"></script>
 
 </html>
