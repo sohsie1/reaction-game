@@ -8,6 +8,9 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
+
+
+
 function getCompScore() {
     const images = ['r', 'p', 's'];
     const randomNumber = (Math.floor(Math.random() * 4)); //.floor rounds the decimal number up
@@ -15,31 +18,32 @@ function getCompScore() {
 }
 console.log(getCompScore()); //gives random element from choices array for the Computer
 
-function label(letter) { //converts the letter id to a label for it to be readable on the webpage
-    if (letter === 'r') return "Rock";
-    if (letter === 'p') return "Paper";
-    return "Scissors";
-}
 
-function win(a, b) { //what will print on webpage
+
+function win() { //what will print on webpage
     playerScore++;
     playerScore_span.innerHTML = playerScore;
     compScore_span.innerHTML = compScore;
-    finalResult_p.innerHTML = "You win! You chose " + label(a) + " and the Computer chose " + label(b) + "."
+    finalResult_p.innerHTML = "You win!"
 }
 
-function lost(a, b) {
+
+
+function lost() {
     compScore++;
     playerScore_span.innerHTML = playerScore;
     compScore_span.innerHTML = compScore;
-    finalResult_p.innerHTML = "Oh no, you lost. You chose " + label(a) + " and the Computer chose " + label(b) + "."
+    finalResult_p.innerHTML = "Oh no, you lost."
 }
 
-function draw(a, b) {
+
+
+function draw() {
     // playerScore_span.innerHTML = playerScore;
     // compScore_span.innerHTML = compScore;
-    finalResult_p.innerHTML = "It's a tie! Try again. You and the Computer both chose " + label(a) + " and " + label(b) + "."
+    finalResult_p.innerHTML = "It's a tie! Try again."
 }
+
 
 
 function game (playerScore) { //gives random Computer element after Player chooses an option
@@ -81,6 +85,8 @@ function game (playerScore) { //gives random Computer element after Player choos
         
     }
 } 
+
+
 
 
 function rockPaperScissors() { //clickable buttons
