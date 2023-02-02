@@ -10,10 +10,9 @@ const scissors_div = document.getElementById("s");
 
 
 
-
 function getCompScore() {
     const images = ['r', 'p', 's'];
-    const randomNumber = (Math.floor(Math.random() * 4)); //.floor rounds the decimal number up
+    let randomNumber = (Math.floor(Math.random() * 4)); //.floor rounds the decimal number up
     return images[randomNumber];
 }
 console.log(getCompScore()); //gives random element from choices array for the Computer
@@ -33,15 +32,13 @@ function lost() {
     compScore++;
     playerScore_span.innerHTML = playerScore;
     compScore_span.innerHTML = compScore;
-    finalResult_p.innerHTML = "Oh no, you lost."
+    finalResult_p.innerHTML = "Oh no, you lost. Try again!"
 }
 
 
 
 function draw() {
-    // playerScore_span.innerHTML = playerScore;
-    // compScore_span.innerHTML = compScore;
-    finalResult_p.innerHTML = "It's a tie! Try again."
+    finalResult_p.innerHTML = "It's a tie! Try again. "
 }
 
 
@@ -85,7 +82,6 @@ function game (playerScore) { //gives random Computer element after Player choos
         
     }
 } 
-
 
 
 
